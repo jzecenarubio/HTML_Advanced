@@ -1,4 +1,17 @@
-p {
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 10px;
+}
+.box::before {
+  content: "Gone Angels";
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
   padding: 20px;
-  margin: 0;
+  border: 10px solid crimson;
+  display: inline-block;
 }
