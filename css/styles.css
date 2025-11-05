@@ -1,17 +1,35 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+html {
+  font-size: 100%;
+}
 body {
   margin: 10px;
+  height: 200vh;
 }
-.box::before {
-  content: "Gone Angels";
+.boxes {
+  border: 3px solid salmon;
+  position: relative;
 }
 .box {
-  width: 100px;
-  height: 100px;
-  background-color: aquamarine;
-  padding: 20px;
-  border: 10px solid crimson;
-  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+}
+.grade-one {
+  background: blanchedalmond;
+  position: relative;
+}
+.grade-two {
+  background: darkcyan;
+  position: fixed;
+  right: 2rem;
+  left: 2rem;
+  top: 0;
+  width: auto;
+  z-index: 1;
+}
+.grade-three {
+  background: midnightblue;
+  position: relative;
 }
