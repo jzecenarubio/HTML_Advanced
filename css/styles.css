@@ -1,10 +1,10 @@
-*, *::before, *::after {
+/* *, *::before, *::after {
   box-sizing: border-box;
 }
 html {
   font-size: 100%;
 }
-body {
+.body {
   margin: 10px;
   height: 200vh;
 }
@@ -22,9 +22,9 @@ body {
 }
 .grade-two {
   background: darkcyan;
-  position: fixed;
+  position: relative;
   right: 2rem;
-  left: 2rem;
+  left: 0;
   top: 0;
   width: auto;
   z-index: 1;
@@ -32,4 +32,63 @@ body {
 .grade-three {
   background: midnightblue;
   position: relative;
+} */
+.tweet {
+  border: 3px solid red;
+  margin: 10px;
+}
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: crimson;
+  float: left;
+  margin-right: 0.5rem;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.container {
+  border: 3px double deepskyblue;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.box {
+  flex-basis: 15rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 5rem;
+  height: 5rem;
+  background: darkslateblue;
+  margin: 1rem;
+}
+.box-one {
+  align-self: flex-start;
+  flex-grow: 0;
+  flex-basis: 5rem;
+}
+.pyrex {
+  display: grid;
+  grid-template: 100px auto 100px / 30fr 70fr;
+  grid-template-areas: 
+  "header  header" 
+  "sidebar  main" 
+  "footer  footer";
+  gap: 10px;
+  border: 3px solid greenyellow;
+  height: 100vh;
+}
+.box-two {  
+  background: darkgoldenrod;
+}
+.one {
+  grid-area: header;
+}
+.four {
+  grid-area: footer;
 }
