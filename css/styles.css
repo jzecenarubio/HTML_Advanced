@@ -92,3 +92,34 @@ html {
 .four {
   grid-area: footer;
 }
+.tupper {
+  display: flex;
+  flex-direction: column;
+}
+.box-three {
+  background: thistle;
+  padding: 1rem;
+}
+.box-three:nth-of-type(2) {
+  background: aquamarine;
+}
+
+ @media screen and (min-width: 600px) {
+  .tupper {
+    flex-direction: row;
+  }
+ }
+
+ @media screen and (min-width: 900px) {
+  .tupper {
+    flex-direction: row;
+  }
+  .box-three {
+    background: azure;
+  }
+ }
+@media print {
+  body {
+    font-size: 12px;
+  }
+}
