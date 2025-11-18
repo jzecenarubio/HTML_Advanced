@@ -189,7 +189,7 @@ body {
 label {
   display: block;
 }
-input[type="text"] {
+input{
   border: 2px solid cornflowerblue;
   border-radius: 5px;
   padding: 0.5rem 0.7rem;
